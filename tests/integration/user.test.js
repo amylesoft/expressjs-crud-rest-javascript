@@ -56,7 +56,7 @@ describe('Users', () => {
             return request(app)
                 .post('/v1/users')
                 .send(mockUser)
-                .expect(httpStatus.CREATED)
+                .expect(httpStatus.OK)
                 .expect({
                     ...mockUser
                 });
